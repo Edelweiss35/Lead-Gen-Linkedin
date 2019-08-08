@@ -63,7 +63,6 @@ random_delay = random.random()
 time.sleep(random.randint(1,3) + random_delay)
 
 div_content = driver.find_element_by_xpath("//div[@class='basic-typeahead__triggered-content search-s-add-facet__typeahead-tray']")
-#print(div_content.get_attribute('innerHTML'))
 
 location_list = driver.find_elements_by_xpath("//div[@class='basic-typeahead__selectable ember-view']")
 location_list[0].click()
