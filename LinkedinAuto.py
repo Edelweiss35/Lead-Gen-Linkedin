@@ -14,6 +14,7 @@ country = "United States"
 
 nCnt = 0
 
+
 EXE_PATH = "chromedriver.exe"
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--disable-extensions')    
