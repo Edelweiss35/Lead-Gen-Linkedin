@@ -5,6 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium.common.exceptions import ElementClickInterceptedException
 
+
 linkedin_url = "https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin"
 email = "edelweiss89@outlook.com"
 password = "qwe123QWE!@#"
