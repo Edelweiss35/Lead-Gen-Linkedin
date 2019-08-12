@@ -75,7 +75,6 @@ apply_button_list[1].click()
 random_delay = random.random()
 time.sleep(random.randint(2,5) + random_delay)
 
-
 driver.find_element_by_xpath("//div[@class='search-results-container']").click()
 random_delay = random.random()
 time.sleep(random.randint(2,5) + random_delay)
