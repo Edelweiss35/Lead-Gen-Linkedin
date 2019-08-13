@@ -3,12 +3,13 @@ import time
 import random
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import ElementClickInterceptedException
 
 linkedin_url = "https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin"
 email = "edelweiss89@outlook.com"
 password = "qwe123QWE!@#"
-str_search = "freelancer"
-country = "Poland"
+str_search = "fiverr"
+country = "United States"
 
 nCnt = 0
 
@@ -103,8 +104,19 @@ for i in range(100):
         random_delay = random.random()
         time.sleep(random.randint(2,10) + random_delay)
     except NoSuchElementException:
+        if i == 0:
+            driver.find_element_by_xpath('//button[@aria-label="'+str_tmp+'"]').click()
+            continue
         pass
     except StaleElementReferenceException:
+        if i == 0:
+            driver.find_element_by_xpath('//button[@aria-label="'+str_tmp+'"]').click()
+            continue
+        pass
+    except ElementClickInterceptedException:
+        if i == 0:
+            driver.find_element_by_xpath('//button[@aria-label="'+str_tmp+'"]').click()
+            continue
         pass
         
     str_tmp = "Page " + str(i + 4)
