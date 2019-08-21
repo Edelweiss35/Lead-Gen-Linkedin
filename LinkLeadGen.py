@@ -7,9 +7,9 @@ from selenium.common.exceptions import ElementClickInterceptedException
 
 
 linkedin_url = "https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin"
-email = "edelweiss832@outlook.com"
+email = "test@outlook.com"
 password = "qwe123QWE!@#"
-str_search = "freelancer"
+str_search = "CEO"
 country = "United States"
 
 nCnt = 0
