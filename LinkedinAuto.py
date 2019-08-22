@@ -9,7 +9,7 @@ from selenium.common.exceptions import ElementClickInterceptedException
 linkedin_url = "https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin"
 email = "edelweiss832@outlook.com"
 password = "qwe123QWE!@#"
-str_search = "freelancer"
+str_search = "graduate"
 country = "United States"
 
 nCnt = 0
@@ -105,7 +105,7 @@ for i in range(100):
                     if nCnt == 100:
                         break
 
-            str_tmp = "&page=" + str(i + 2)
+            str_tmp = "&page=" + str(i + 30)
             print(str_tmp)
             
             if i == 0:
